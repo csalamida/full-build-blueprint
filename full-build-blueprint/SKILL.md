@@ -7,6 +7,31 @@ description: Interview the user and create or audit a complete CRM and business 
 
 Create a plan a builder can follow without repeatedly discovering missing files, settings or business decisions halfway through the work. Explain it so a nontechnical business owner can understand it too. A thorough plan cannot guarantee that account tests will reveal no surprises; make remaining checks visible.
 
+## Start with a simple invocation
+
+`$full-build-blueprint` alone starts the guided process. The user does not need to write a long prompt, choose a mode or upload files first. Read the current conversation and supplied project material, explain briefly what is known, then ask the next one to three useful questions. Follow the interview below until enough is known to create the blueprint and expandable HTML map. If the answers are already available, proceed without repeating them.
+
+These optional shortcuts are instructions written in chat, not terminal commands or built-in command-line flags:
+
+| Invocation | What to do |
+| --- | --- |
+| `$full-build-blueprint` | Ask the missing questions in small groups, then create the full blueprint and map. |
+| `$full-build-blueprint --interview` | Ask questions and finish with a recap of answers and open items. Wait for a request to write the blueprint. |
+| `$full-build-blueprint --draft` | Create a working draft from what is known now. Mark suggested choices, missing answers and account checks clearly. |
+| `$full-build-blueprint --plan` | Create the full stage-by-stage blueprint and map. Reuse known answers and ask only material questions still needed. |
+| `$full-build-blueprint --audit` | Walk through an existing plan as if building and using it. Repair supported gaps and report remaining questions. |
+| `$full-build-blueprint --map` | Create or update the expandable HTML map from the known plan. Keep stage names, connections and open items consistent. |
+| `$full-build-blueprint --resume` | Continue the current interview or blueprint from the conversation and available private project notes. Do not restart answered questions. |
+| `$full-build-blueprint --help` | Show this short menu and explain that files are optional. Do not start the interview yet. |
+
+Follow a clear natural-language request even if no shortcut is supplied. Explicit user instructions take priority over a mode's defaults. Compatible shortcuts can be combined, such as `--draft --map`; ask a short clarification for conflicting or unknown shortcuts instead of inventing a new mode.
+
+### When there are no files
+
+Start from the user's answers. Read [the guided interview](references/guided-interview.md) and begin with the business, the process to improve and the desired result. Do not make uploading files a requirement, search unrelated private folders or invent client details. Ask later whether relevant materials exist; distinguish something not yet supplied from something that needs to be created.
+
+If a draft or map is requested with no useful project context, ask the smallest opening group first so it describes a real business. A draft can then contain visible open items; a map from an unfinished plan must be labelled a working map. For `--audit`, ask for an existing plan or a description of the current process when neither is available. For `--resume`, explain briefly if no earlier answers are available and start the normal opening questions. Never pretend to recover missing work.
+
 ## Default working style
 
 - Organise work as **System → Pipeline stage → Main workflow → Connected workflows → Smaller connected steps**.

@@ -108,13 +108,36 @@ skills/
 
 Other assistants may use different discovery folders. Follow their installation instructions; the package here includes Codex metadata, not a universal auto-installer for every product.
 
-## Start the guided interview
+## Just invoke the skill
 
-Attach the client's current process, source files and any existing blueprint in your **private** workspace, then ask:
+In a private client chat, type:
 
-> Use $full-build-blueprint for this client. Read my files first. Ask me the missing questions in small groups before writing the full blueprint. Then organise the plan by pipeline stage and create an expandable HTML map.
+```text
+$full-build-blueprint
+```
 
-The assistant works through six topic rounds as needed:
+That is enough. You do not need a long prompt or any files to begin. The assistant reads what is already in the conversation, asks **one to three missing questions at a time**, and waits for your answers. Once enough is known, it creates the stage-by-stage blueprint and expandable HTML map.
+
+If you have files, attach them in your private workspace. If you have none, it starts with what the business does, which process you want to improve and what the finished setup should do. It later separates files still to be supplied from files that need to be created.
+
+## Choose a task when you need to
+
+These are **chat shortcuts**, not terminal commands or built-in command-line flags. Type the skill name followed by a shortcut:
+
+| Type in chat | What happens |
+| --- | --- |
+| `$full-build-blueprint` | Questions first, then the full blueprint and map. |
+| `$full-build-blueprint --interview` | Questions only, followed by a recap and open items. |
+| `$full-build-blueprint --draft` | A working draft now, with missing answers clearly marked. |
+| `$full-build-blueprint --plan` | The full blueprint and map, using known answers and asking only what is still needed. |
+| `$full-build-blueprint --audit` | Walk through an existing plan to find and address missing pieces. |
+| `$full-build-blueprint --map` | An expandable HTML map of the known plan. |
+| `$full-build-blueprint --resume` | Continue where the current interview or plan left off. |
+| `$full-build-blueprint --help` | Show the available shortcuts. |
+
+You can still use normal sentences, such as “Review my blueprint for missing calendar settings and email copy.” A clear request takes priority over the defaults. Compatible shortcuts can be combined, such as `--draft --map`.
+
+The interview covers these topics **as needed**, skipping anything already answered:
 
 1. The business and the desired result.
 2. The real process, stage by stage.
@@ -123,19 +146,11 @@ The assistant works through six topic rounds as needed:
 5. Exceptions, staff cover and things that can go wrong.
 6. A recap, remaining questions and readiness to write the plan.
 
-It asks **one to three questions at a time**, waits for your reply, and skips answers already found in your files. You can say “I don't know”, “ask the client” or “suggest something”. Unresolved items remain visible; they are not quietly invented.
+You can say “I don't know”, “ask the client” or “suggest something”. Unresolved items remain visible; they are not quietly invented. A working draft is not presented as ready to build while important answers or account checks are missing.
 
-When enough is known, it creates the full blueprint and map. If you need a draft sooner, say:
+An audit needs a plan or a description of the current process. A map of an unfinished plan is labelled a working map. Resume uses available conversation history and private project notes; if no earlier answers are available, the assistant says so and starts with the opening questions.
 
-> Create a working draft now. Keep unanswered questions and unverified account features clearly marked.
-
-For a review of an existing plan:
-
-> Use $full-build-blueprint to walk through this blueprint as if you were building it. Find missing calendar settings, email copy, forms, fields, file rules and staff actions. Add the missing details where the source gives an answer, and group unanswered questions for the client.
-
-Supply the current client's process, existing blueprint and source documents in your own private workspace. They do not belong in this public repository.
-
-The default integration preference is n8n. An explicitly chosen tool takes priority. The skill does not require HighLevel; keep the client's actual CRM and agreed scope.
+Client files and interview notes belong in your private workspace, never in this public repository. The default integration preference is n8n. An explicitly chosen tool takes priority. The skill does not require HighLevel; keep the client's actual CRM and agreed scope.
 
 ## Included
 

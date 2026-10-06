@@ -2,6 +2,20 @@
 
 Use for a new full blueprint or a substantially changed process. Read available sources first. This is a question bank, not a script to recite. Skip answered or irrelevant topics, and ask follow-ups that fit the actual business.
 
+## Starting without files
+
+Files are helpful, but optional. Use the conversation first. If nothing identifies the project, begin with:
+
+1. What does the business do?
+2. Which part of its work do you want to improve?
+3. What would you like the team to be able to do when the setup is finished?
+
+Wait for the answers, then choose the next small group. Ask about tools and one real example before detailed settings. Do not demand every document upfront or assume a CRM, pipeline or business rule. If the user already answered an opening question, skip it.
+
+Later, ask whether relevant forms, messages or documents already exist. If they exist but have not been supplied, record that they still need to be received. If they do not exist, include writing or creating them in the plan, with who reviews them. Never label a nonexistent file as received or approved.
+
+For `--interview`, end with the recap and open questions. For the default invocation or `--plan`, continue to the full plan once material answers are clear. For `--draft`, use available answers sooner and show the remaining open items.
+
 ## Keep it easy to answer
 
 - Ask one to three questions per turn, on one related topic where possible.

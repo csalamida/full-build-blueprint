@@ -1,4 +1,4 @@
 interface:
   display_name: "Full Build Blueprint"
   short_description: "Ask the right questions, then plan every build stage"
-  default_prompt: "Use $full-build-blueprint to read my sources, interview me in small groups of questions, then create a complete, plain-language stage-by-stage blueprint and expandable process map."
+  default_prompt: "Use $full-build-blueprint."
