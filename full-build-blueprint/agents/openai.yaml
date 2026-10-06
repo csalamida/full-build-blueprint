@@ -1,0 +1,4 @@
+interface:
+  display_name: "Full Build Blueprint"
+  short_description: "Plan every stage, connected step and small detail"
+  default_prompt: "Use $full-build-blueprint to create a complete, plain-language setup plan, organised by system and pipeline stage, with an expandable process map."
