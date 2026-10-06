@@ -1,6 +1,6 @@
 ---
 name: full-build-blueprint
-description: Create or audit a complete CRM and business automation build plan, organised by system, pipeline stage and connected workflows. Use for full setup blueprints, stage build packs, expandable process maps, and build simulations that find missing details before implementation.
+description: Interview the user and create or audit a complete CRM and business automation build plan, organised by system, pipeline stage and connected workflows. Use for full setup blueprints, stage build packs, expandable process maps, and build simulations that find missing details before implementation.
 ---
 
 # Full Build Blueprint
@@ -19,6 +19,16 @@ Create a plan a builder can follow without repeatedly discovering missing files,
 ## Establish the actual project
 
 Read supplied sources and the current blueprint before extending it. Preserve agreed scope, stage names, manual work, fees and tool choices. Separate a business record's working status from a sales pipeline; do not create another pipeline merely to fit this template.
+
+## Interview before the full blueprint
+
+For a new full blueprint, read [the guided interview](references/guided-interview.md) and use it before drafting the final plan. Start by explaining what you already know from the sources. Ask the next small group of unanswered questions, wait for the reply, then choose the follow-up questions based on that reply. Do not post the entire questionnaire or the entire blueprint in the first turn.
+
+Ask one to three questions per turn, with examples or simple options where helpful. Do not ask for facts already supplied, actual passwords, or decisions that only the builder can investigate. If all material answers are already available, skip redundant questions and proceed. A narrow edit or audit does not require restarting the interview.
+
+An unknown answer is allowed: record who must confirm it, the affected stage and what stays off until confirmed. Offer a clearly labelled suggestion where useful. If the user requests a draft now or says to use judgment, honour that instruction and show open questions visibly. Do not present unresolved material business rules as an implementation-ready plan.
+
+Before the final blueprint, give a short recap of the proposed daily process, scope, key rules and remaining questions. Invite correction only where it would resolve a consequential ambiguity; this recap is not a separate mandatory approval gate. Once material choices are clear, produce the full blueprint and map. Keep later account tests and reviews of the built system separate from client answers.
 
 Describe the starting position and the finished daily routine: which tool staff uses for each job, which steps run automatically, which staff must perform, and where information is saved. “HighLevel manages it” is too vague. Creating a task does not complete the call, inspection, approval or handoff.
 
